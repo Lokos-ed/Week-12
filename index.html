@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
     <h1>Video Game Database</h1>
@@ -17,11 +18,25 @@
             </tr>
         </thead>
         <tbody>
+            <tr id="tableRow">
 
+            </tr>
         </tbody>
     </table>
 
-
+    <div class="form-row align-items-center">
+        <div class="col-auto">
+            <label class="sr-only" for="gameNameInput"></label>
+            <input type="text" class="form-control mb-2" id="gameNameInput" placeholder="Game Name">
+        </div>
+        <div class="col-auto">
+            <label class="sr-only" for="copiesSoldInput"></label>
+            <input type="text" class="form-control mb-2" id="copiesSoldInput" placeholder="Copies Sold">
+        </div>
+        <div class="row-auto">
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        </div>
+    </div>
 
 
 
