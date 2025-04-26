@@ -65,14 +65,22 @@ getP()
 const submitFormButton = document.getElementById("formSubmit")
 submitFormButton.addEventListener("click", (event) => {
     event.preventDefault()
+    
     let Title = document.getElementById("gameNameInput").value
     let Sold = document.getElementById("copiesSoldInput").value
+
+    info = {
+        ["title"]: Title,
+        ["sold"]: Sold
+
+    }
     fetch('http://localhost:3000/games', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: `{"title":"${Title}","sold":${Sold}}`
+        //turns a table into json
+        body: JSON.stringify(info)
     })
     ClearTable()
     getP()
