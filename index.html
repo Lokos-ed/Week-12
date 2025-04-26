@@ -9,7 +9,7 @@
 <body>
     <h1>Video Game Database</h1>
     <h2>Week 12 Assignment</h2>
-    <table class="table table-bordered">
+    <table class="table table-bordered" id="gameTable">
         <thead>
             <tr>
                 <th scope="col">#</th>
@@ -17,9 +17,9 @@
                 <th scope="col">Copies Sold</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="tableBody">
             <tr id="tableRow">
-
+                
             </tr>
         </tbody>
     </table>
@@ -34,7 +34,7 @@
             <input type="text" class="form-control mb-2" id="copiesSoldInput" placeholder="Copies Sold">
         </div>
         <div class="row-auto">
-            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+            <button type="submit" id="formSubmit" class="btn btn-primary mb-2">Add Game Entry</button>
         </div>
     </div>
 
